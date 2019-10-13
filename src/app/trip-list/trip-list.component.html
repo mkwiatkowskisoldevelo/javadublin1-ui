@@ -1,0 +1,46 @@
+<p>trip-list works!</p>
+<ul>
+    <li *ngFor="let trip of trips">
+        {{trip.id}}, {{trip.departureDate}}, {{trip.duration}}, {{trip.kidsPrice}}
+    </li>
+</ul>
+
+<mat-table [dataSource]="trips" class="mat-elevation-z8">
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef>Identifier</mat-header-cell>
+        <mat-cell *matCellDef="let trip">{{trip.id}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="departureDate">
+        <mat-header-cell *matHeaderCellDef>Departure Date</mat-header-cell>
+        <mat-cell *matCellDef="let trip">{{trip.departureDate}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="returnDate">
+        <mat-header-cell *matHeaderCellDef>Return Date</mat-header-cell>
+        <mat-cell *matCellDef="let trip">{{trip.returnDate}}</mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+<!-- <table>
+    <thead>
+        <tr>
+            <th>Identifier</th>
+            <th>Departure Date</th>
+            <th>Return Date</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>2019-10-01</td>
+            <td>2019-10-11</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2019-10-01</td>
+            <td>2019-10-11</td>
+        </tr>
+    </tbody>
+</table> -->
