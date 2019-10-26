@@ -1,5 +1,9 @@
-<p>trip-list works!</p>
+<p>trip-list works! NEW NEW</p>
+
+{{tripListTitle}}
+
 <ul>
+    <!-- for (Trip trip : trips) -->
     <li *ngFor="let trip of trips">
         {{trip.id}}, {{trip.departureDate}}, {{trip.duration}}, {{trip.kidsPrice}}
     </li>
@@ -17,6 +21,12 @@
     <ng-container matColumnDef="returnDate">
         <mat-header-cell *matHeaderCellDef>Return Date</mat-header-cell>
         <mat-cell *matCellDef="let trip">{{trip.returnDate}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="airportFrom">
+        <mat-header-cell *matHeaderCellDef>Departure Airport</mat-header-cell>
+        <mat-cell *matCellDef="let trip">
+            {{trip.from.cityFrom.name}} - {{trip.from.airportFrom.name}}
+        </mat-cell>
     </ng-container>
     <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>

@@ -7,19 +7,31 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TripListComponent } from './trip-list/trip-list.component';
 import { HttpClientModule } from '@angular/common/http';
 
-import { MatTableModule } from '@angular/material';
+import { MatTableModule, MatFormFieldModule, MatSelectModule, MatOptionModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import { TripDetailsComponent } from './trip-details/trip-details.component';
+import { TripCreateComponent } from './trip-create/trip-create.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TripListComponent
+    TripListComponent,
+    TripDetailsComponent,
+    TripCreateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
