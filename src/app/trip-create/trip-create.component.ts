@@ -32,7 +32,7 @@ export class TripCreateComponent implements OnInit {
 
   save() {
     console.log(this.trip);
-    this.http.post('http://localhost:8080/trips', this.trip)
+    this.http.post('http://34.248.11.100:8080/trips', this.trip)
       .subscribe(response => {
         console.log(response);
         this.router.navigate(['trips']);
