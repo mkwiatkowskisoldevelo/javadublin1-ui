@@ -1,0 +1,1 @@
+{"version":3,"file":"trip.js","sourceRoot":"","sources":["../../../../../src/app/domain/trip.ts"],"names":[],"mappings":"AAEA,MAAM,OAAO,IAAI;IAYb,UAAU;IAEV,YAAY,EAAW,EAAE,IAAa,EAClC,QAAiB,EAAE,aAAsB;QACzC,IAAI,CAAC,EAAE,GAAG,EAAE,CAAC;QACb,IAAI,CAAC,IAAI,GAAG,IAAI,CAAC;QACjB,IAAI,CAAC,QAAQ,GAAG,QAAQ,CAAC;QACzB,IAAI,CAAC,aAAa,GAAG,aAAa,CAAC;IACvC,CAAC;CACJ"}
