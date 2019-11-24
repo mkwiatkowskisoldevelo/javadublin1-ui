@@ -35,7 +35,7 @@ export class TripListComponent implements OnInit {
     // this.trips.push(new Trip(2, 'trip2', 7, '2019-10-02'));
     // this.trips.push(new Trip(3, 'trip3', 5, '2019-10-03'));
     // this.trips.push(new Trip(4, 'trip4', 2, '2019-10-04'));
-    this.http.get<Trip[]>('http://34.248.11.100:8080/trips')
+    this.http.get<Trip[]>('http://172.31.23.54:8080/trips')
       .subscribe(response => {
         this.trips = response;
         console.log('RESPONSE');
