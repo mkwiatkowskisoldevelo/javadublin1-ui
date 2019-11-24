@@ -40,8 +40,8 @@
     </mat-form-field>
 
     <mat-form-field>
-        <mat-select placeholder="Select">
-        <mat-option value="option">Option</mat-option>
+        <mat-select placeholder="Select catering option" [(ngModel)]="trip.catering">
+            <mat-option *ngFor="let catering of caterings" value="{{catering}}">{{getCateringLabel(catering)}}</mat-option>
         </mat-select>
     </mat-form-field>
 

@@ -1,4 +1,5 @@
 import { To } from './to';
+import { Catering } from './catering.enum';
 
 export class Trip {
     id: number;
@@ -12,6 +13,7 @@ export class Trip {
     promoted: boolean;
     adultPlacesAvailable: number;
     childPlacesAvailable: number;
+    catering: Catering;
     // to: To;
 
     constructor(id?: number, name?: string, 

@@ -5,8 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+// glowny component aplikacji
 export class AppComponent {
-  // public String title = "travel-service";
   title = 'travel-service';
-  name:string;
 }
